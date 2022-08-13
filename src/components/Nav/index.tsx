@@ -1,11 +1,11 @@
-import "./index.scss";
-import classnames from "classnames";
-import { Link } from "react-router-dom";
+import './index.scss';
+import classnames from 'classnames';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
     <div className="nav">
-      <ul className={classnames("nav-list", "list")}>
+      <ul className={classnames('nav-list', 'list')}>
         <li className="list__item">
           <Link to="/">MainPage</Link>
         </li>

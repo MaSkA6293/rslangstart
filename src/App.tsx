@@ -1,12 +1,19 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.scss";
-import MainPage from "./pages/main";
-import Error from "./components/Error/Error";
-import DicionaryPage from "./pages/dictionary";
-import AudioCallGamePage from "./pages/audioCallGame";
-import SprintGamePage from "./pages/sprintGame";
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import MainPage from './pages/main';
+import Error from './components/Error/Error';
+import DicionaryPage from './pages/dictionary';
+import AudioCallGamePage from './pages/audioCallGame';
+import SprintGamePage from './pages/sprintGame';
+
+import { useGetWordQuery } from './redux';
 
 function App() {
+  const { data = [], isLoading } = useGetWordQuery();
+
+  if (isLoading) return <h1>Loading...</h1>;
+
+  console.log(data);
   return (
     <div className="App">
       <Routes>

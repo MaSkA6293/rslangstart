@@ -1,5 +1,5 @@
-import "./index.scss";
-import Nav from "../Nav";
+import './index.scss';
+import Nav from '../Nav';
 
 export default function Header() {
   return (

@@ -1,6 +1,6 @@
-import "./index.scss";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import './index.scss';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 function AudioCallGamePage() {
   return (

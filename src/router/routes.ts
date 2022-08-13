@@ -1,3 +1,1 @@
-export const routes = [
-  {path: '/about', component: 'Main'}
-]
+export const routes = [{ path: '/about', component: 'Main' }];
