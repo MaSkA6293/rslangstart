@@ -39,6 +39,9 @@
     ],
     "import/prefer-default-export": "off",
     "no-param-reassign": ["off", { "props": true }],
-    "no-promise-executor-return": "off"
+    "no-promise-executor-return": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-unused-vars": ["error"]
   }
 }
